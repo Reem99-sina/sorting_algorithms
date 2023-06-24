@@ -13,6 +13,10 @@ size_t i = 0;
 size_t j;
 size_t k;
 bool swapped;
+if (array == NULL || size < 2)
+{
+return;
+}
 while (i < size - 1)
 {
 swapped = false;

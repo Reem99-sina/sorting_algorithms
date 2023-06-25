@@ -11,7 +11,6 @@ void bubble_sort(int *array, size_t size)
 int tmp;
 size_t i = 0;
 size_t j;
-size_t k;
 bool swapped;
 if (array == NULL || size < 2)
 {
@@ -28,21 +27,9 @@ tmp = array[j];
 array[j] = array[j + 1];
 array[j + 1] = tmp;
 swapped = true;
-for (k = 0; k < size; k++)
-{
-if (k == size - 1)
-{
-printf("%d", array[k]);
-}
-else
-{
-printf("%d, ", array[k]);
+print_array(array, size);
 }
 }
-printf("\n");
-}
-}
-
 if (swapped == false)
 {
 break;
